@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      input[type=text], select, textarea {
+  width: 50%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" type="image/jpg" href="./assets/favicon.jpg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <title>Ecommerce</title>
+  </head>
+
+  <body>
+    <input type="checkbox" name="" id="check" />
+
+    <nav class="sticky">
+      <div class="icon">Shopzi Zone</div>
+      <div class="search_box">
+        <input type="search" placeholder="Search products" />
+        <span class="fa fa-search"></span>
+      </div>
+
+      <ol>
+        <li><a href="#Trending" class="btn btn-center">Trending </a></li>
+        <li><a href="#Products" class="btn btn-center">Products</a></li>
+        <li><a href="#Contact" class="btn btn-center">Contact</a></li>
+        <li><a href="./login.html" class="btn btn-center">Login/SignUp</a></li>
+      </ol>
+      <label for="check" class="bar">
+        <span class="fa fa-bars" id="bars"></span>
+        <span class="fa fa-times" id="times"></span>
+      </label>
+    </nav>
+  </body>
+
+  
+  <div class="slideshow-container">
+    
+    <div class="mySlides fade">
+      <img src="./assets/Banner1.png" style="width: 100%" />
+    </div>
+
+    <div class="mySlides fade">
+      <img src="./assets/Banner2.png" style="width: 100%" />
+    </div>
+
+    <div class="mySlides fade">
+      <img src="./assets/Banner3.png" style="width: 100%" />
+    </div>
+  </div>
+  <br />
+
+ 
+  <section class="product">
+    <h2 class="product-category" id="Trending">Top Deals</h2>
+  </section>
+
+  <button class="pre-btn"><img src="assets/arrow.png" alt="" /></button>
+  <button class="nxt-btn"><img src="assets/arrow.png" alt="" /></button>
+
+  <div class="product-container">
+    <div class="product-card">
+      <div class="product-image">
+        <a href="./products/product_page1.html">
+        <span class="discount-tag">90% off</span>
+        <img src="assets/card1.png" class="product-thumb" alt="" />
+      </a>
+        <button class="card-btn">add to wishlist</button>
+      </div>
+      <div class="product-info">
+        <a href="./products/product_page1.html">
+        <h2 class="product-brand">Green Floral Dress</h2>
+        <p class="product-short-des">Forever 21</p>
+        <span class="price">₹220</span><span class="actual-price">₹400</span>
+      </a>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-image">
+        <a href="./products/product_page.html">
+        <span class="discount-tag">70% off</span>
+        <img src="assets/card2.png" class="product-thumb" alt="" />
+      </a>
+        <button class="card-btn">add to wishlist</button>
+      </div>
+      <div class="product-info">
+        <a href="./products/product_page.html">
+        <h2 class="product-brand">Men Sports Outfit Combo</h2>
+        <p class="product-short-des">HRX</p>
+        <span class="price">₹229</span><span class="actual-price">₹400</span>
+      </a>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-image">
+        <a href="./products/product_page.html">
+        <span class="discount-tag">66% off</span>
+        <img src="assets/card3.png" class="product-thumb" alt="" />
+      </a>
+        <button class="card-btn">add to wishlist</button>
+      </div>
+      <div class="product-info">
+        <a href="./products/product_page.html">
+        <h2 class="product-brand">Casual White T-Shirt</h2>
+        <p class="product-short-des">Puma</p>
+        <span class="price">₹229</span><span class="actual-price">₹400</span>
+      </a>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-image">
+        <a href="./products/product_page.html">
+        <span class="discount-tag">70% off</span>
+        <img src="assets/card4.png" class="product-thumb" alt="" />
+      </a>
+        <button class="card-btn">add to wishlist</button>
+      </div>
+      <div class="product-info">
+        <a href="./products/product_page.html">
+        <h2 class="product-brand">Red Western Dress</h2>
+        <p class="product-short-des">FabAlley</p>
+        <span class="price">₹229</span><span class="actual-price">₹400</span>
+      </a>
+      </div>
+    </div>
+    
+    <div class="product-card">
+      <div class="product-image">
+        <a href="./products/product_page.html">
+        <span class="discount-tag">50% off</span>
+        <img src="assets/card6.png" class="product-thumb" alt="" />
+        </a>
+        <button class="card-btn">add to wishlist</button>
+      </div>
+      <div class="product-info">
+        <a href="./products/product_page.html">
+        <h2 class="product-brand">Men Black shirt</h2>
+        <p class="product-short-des">Raymonds</p>
+        <span class="price">₹229</span><span class="actual-price">₹500</span>
+        </a>
+      </div>
+    </div>
+    
+  </div>
+
+  
+  <section class="product">
+    <h2 class="product-category" id="Products">Shoes</h2>
+  </section>
+
+  <button class="pre-btn"><img src="assets/arrow.png" alt="" /></button>
+  <button class="nxt-btn"><img src="assets/arrow.png" alt="" /></button>
+
+  <div class="product-container">
+    <div class="product-card">
+      <div class="product-image">
+        <a href="./products/product_page.html">
+        <img src="assets/card9.png" class="product-thumb" alt="" />
+        </a>
+        <button class="card-btn">add to wishlist</button>
+      </div>
+      <div class="product-info">
+        <a href="./products/product_page.html">
+        <h2 class="product-brand">Black Walking Shoes</h2>
+        <p class="product-short-des">Nike</p>
+        <span class="price">₹220</span><span class="actual-price">₹400</span>
+        </a>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-image">
+        <a href="./products/product_page.html">
+        <img src="assets/card10.png" class="product-thumb" alt="" />
+        </a>
+        <button class="card-btn">add to wishlist</button>
+      </div>
+      <div class="product-info">
+        <a href="./products/product_page.html">
+        <h2 class="product-brand">Black Casual Shoes</h2>
+        <p class="product-short-des">Puma</p>
+        <span class="price">₹600</span><span class="actual-price">₹1000</span>
+        </a>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-image">
+        <a href="./products/product_page.html">
+        <img src="assets/card11.png" class="product-thumb" alt="" />
+        </a>
+        <button class="card-btn">add to wishlist</button>
+      </div>
+      <div class="product-info">
+        <a href="./products/product_page.html">
+        <h2 class="product-brand">Grey sport shoes</h2>
+        <p class="product-short-des">Air Jordan</p>
+        <span class="price">₹200</span><span class="actual-price">₹400</span>
+        </a>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-image">
+        <a href="./products/product_page.html">
+        <img src="assets/card13.jpg" class="product-thumb" alt="" />
+        </a>
+        <button class="card-btn">add to wishlist</button>
+      </div>
+      <div class="product-info">
+        <a href="./products/product_page.html">
+        <h2 class="product-brand">White Sport shoes</h2>
+        <p class="product-short-des">Reebok</p>
+        <span class="price">₹400</span><span class="actual-price">₹600</span>
+        </a>
+      </div>
+    </div>
+    
+    <div class="product-card">
+      <div class="product-image">
+        <a href="./products/product_page.html">
+        <img src="assets/card15.jpg" class="product-thumb" alt="" />
+        </a>
+        <button class="card-btn">add to wishlist</button>
+      </div>
+      <div class="product-info">
+        <a href="./products/product_page.html">
+        <h2 class="product-brand">Black Heel Shoes</h2>
+        <p class="product-short-des">GUCCI</p>
+        <span class="price">₹800</span><span class="actual-price">₹1400</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="product">
+    <h2 class="product-category">Electronics</h2>
+  </section>
+
+  <button class="pre-btn"><img src="assets/arrow.png" alt="" /></button>
+  <button class="nxt-btn"><img src="assets/arrow.png" alt="" /></button>
+
+  <div class="product-container">
+    <div class="product-card">
+      <div class="product-image">
+        <a href="./products/product_page.html">
+        <img src="assets/card16.jpg" class="product-thumb" alt="" />
+        </a>
+        <button class="card-btn">add to wishlist</button>
+      </div>
+      <div class="product-info">
+        <a href="./products/product_page.html">
+        <h2 class="product-brand">Oppo A74</h2>
+        <p class="product-short-des">Oppo India</p>
+        <span class="price">₹22000</span><span class="actual-price">₹40000</span>
+        </a>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-image">
+        <a href="./products/product_page.html">
+        <img src="assets/card17.jpg" class="product-thumb" alt="" />
+        </a>
+        <button class="card-btn">add to wishlist</button>
+      </div>
+      <div class="product-info">
+        <a href="./products/product_page.html">
+        <h2 class="product-brand">Poco X3</h2>
+        <p class="product-short-des">Poco</p>
+        <span class="price">₹45000</span><span class="actual-price">₹60000</span>
+        </a>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-image">
+        <a href="./products/product_page.html">
+        <img src="assets/card19.png" class="product-thumb" alt="" />
+        </a>
+        <button class="card-btn">add to wishlist</button>
+      </div>
+      <div class="product-info">
+        <a href="./products/product_page.html">
+        <h2 class="product-brand">Bluetooth Headset</h2>
+        <p class="product-short-des">Harmonics</p>
+        <span class="price">₹1000</span><span class="actual-price">₹2000</span>
+        </a>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-image">
+        <a href="./products/product_page.html">
+        <img src="assets/card20.jpg" class="product-thumb" alt="" />
+        </a>
+        <button class="card-btn">add to wishlist</button>
+      </div>
+      <div class="product-info">
+        <a href="./products/product_page.html">
+        <h2 class="product-brand">Dell Inspiron 3000</h2>
+        <p class="product-short-des">DELL</p>
+        <span class="price">₹60000</span><span class="actual-price">₹80000</span>
+        </a>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-image">
+        <a href="./products/product_page.html">
+        <img src="assets/card21.jpg" class="product-thumb" alt="" />
+        </a>
+        <button class="card-btn">add to wishlist</button>
+      </div>
+      <div class="product-info">
+        <a href="./products/product_page.html">
+        <h2 class="product-brand">Powerbank</h2>
+        <p class="product-short-des">Samsung</p>
+        <span class="price">₹2000</span><span class="actual-price">₹4000</span>
+        </a>
+      </div>
+    </div>
+  
+  </div>
+ 
+
+  <section class="product">
+    <h2 class="product-category">Clothes</h2>
+  </section>
+
+  <button class="pre-btn"><img src="assets/arrow.png" alt="" /></button>
+  <button class="nxt-btn"><img src="assets/arrow.png" alt="" /></button>
+
+  <div class="product-container">
+    <div class="product-card">
+      <div class="product-image">
+        <a href="./products/product_page.html"
+          ><img src="assets/picture1.jpeg" class="product-thumb" alt=""
+        /></a>
+        <button class="card-btn">add to wishlist</button>
+      </div>
+      <div class="product-info">
+        <a href="./products/product_page.html">
+          <h2 class="product-brand">Black Hooded T-shirt</h2>
+          <p class="product-short-des">Black Collection</p>
+          <span class="price">₹220</span><span class="actual-price">₹40</span>
+        </a>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-image">
+        <a href="./products/product_page.html">
+          <img src="assets/card23.jpg" class="product-thumb" alt="" />
+        </a>
+        <button class="card-btn">add to wishlist</button>
+      </div>
+      <div class="product-info">
+        <a href="./products/product_page.html">
+          <h2 class="product-brand">Black White Skirt</h2>
+          <p class="product-short-des">Fashion Nova</p>
+          <span class="price">₹220</span><span class="actual-price">₹40</span>
+        </a>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-image">
+        <a href="./products/product_page.html">
+          <img src="assets/card24jpeg.jpeg" class="product-thumb" alt="" />
+        </a>
+        <button class="card-btn">add to wishlist</button>
+      </div>
+      <div class="product-info">
+        <a href="./products/product_page.html">
+          <h2 class="product-brand">Printed white kurti</h2>
+          <p class="product-short-des">BIBA</p>
+          <span class="price">₹220</span><span class="actual-price">₹40</span>
+        </a>
+      </div>
+    </div>
+  
+    <div class="product-card">
+      <div class="product-image">
+        <a href="./products/product_page.html">
+          <img src="data:image/jpeg;base64,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" class="product-thumb" alt="" />
+        </a>
+        <button class="card-btn">add to wishlist</button>
+      </div>
+      <div class="product-info">
+        <a href="./products/product_page.html">
+          <h2 class="product-brand">Printed Black jacket</h2>
+          <p class="product-short-des">Reebok</p>
+          <span class="price">₹220</span><span class="actual-price">₹40</span>
+        </a>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-image">
+        <a href="./products/product_page.html">
+          <img src="data:image/jpeg;base64,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" class="product-thumb" alt="" />
+        </a>
+        <button class="card-btn">add to wishlist</button>
+      </div>
+      <div class="product-info">
+        <a href="./products/product_page.html">
+          <h2 class="product-brand">Yellow trousers women</h2>
+          <p class="product-short-des">Indian Handloom</p>
+          <span class="price">₹220</span><span class="actual-price">₹40</span>
+        </a>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-image">
+        <a href="./products/product_page.html">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg2W6ECCpnNh_CbG5VyouWDeIbSWVI37IK0Q&usqp=CAU" class="product-thumb" alt="" />
+        </a>
+        <button class="card-btn">add to wishlist</button>
+      </div>
+      <div class="product-info">
+        <a href="./products/product_page.html">
+          <h2 class="product-brand">Red black hoodie for men</h2>
+          <p class="product-short-des">Nike</p>
+          <span class="price">₹220</span><span class="actual-price">₹40</span>
+        </a>
+      </div>
+    </div>
+  
+  </div>
+<br>
+<button class="view" onclick = "window.location.href='file:///C:/Users/Priya/Downloads/ecom/ecommercia-main/cart.html';">View More.. </button>
+<br>
+  <section class="contact">
+    <h2 class="contact-category">Contact Here</h2>
+  </section>
+<br>
+  <div class="container">
+
+    <form action="action_page.php"><center>
+      <label for="name"><h2>Name: </h2></label>
+      <input type="text" id="name" name="name" placeholder="your name.."><br>
+
+      <label for="country"><h2>Country: </h2></label>
+      <input type="text" id="country" name="country" placeholder="your country.."><br>
+
+      <label for="message"><h2>Message:</h2></label><br>
+      <textarea id="message" name="message" placeholder=" type your message here.." style="height:200px"></textarea><br>
+      <br>
+
+      <input type="submit" value="Submit">
+
+    </center>
+    </form>
+  
+  </div>
+
+
+  <footer>
+    <div class="footer-content">
+      <div class="social">
+        <h3>Shopzi Zone</h3>
+         <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <p class="copyright">
+          Copyright &copy; Shopzi Zone @2023 . All rights reserved
+        </p>
+      </div>
+      <div class="footer-ul-container">
+        <ul class="category">
+          <li class="category-title">men</li>
+          <li><a href="#" class="footer-link">t-shirts</a></li>
+          <li><a href="#" class="footer-link">sweatshirts</a></li>
+          <li><a href="#" class="footer-link">shirts</a></li>
+          <li><a href="#" class="footer-link">jeans</a></li>
+          <li><a href="#" class="footer-link">trousers</a></li>
+          <li><a href="#" class="footer-link">shoes</a></li>
+          <li><a href="#" class="footer-link">casuals</a></li>
+          <li><a href="#" class="footer-link">formals</a></li>
+          <li><a href="#" class="footer-link">sports</a></li>
+          <li><a href="#" class="footer-link">watch</a></li>
+        </ul>
+        <ul class="category">
+          <li class="category-title">women</li>
+          <li><a href="#" class="footer-link">t-shirts</a></li>
+          <li><a href="#" class="footer-link">sweatshirts</a></li>
+          <li><a href="#" class="footer-link">shirts</a></li>
+          <li><a href="#" class="footer-link">jeans</a></li>
+          <li><a href="#" class="footer-link">trousers</a></li>
+          <li><a href="#" class="footer-link">shoes</a></li>
+          <li><a href="#" class="footer-link">casuals</a></li>
+          <li><a href="#" class="footer-link">formals</a></li>
+          <li><a href="#" class="footer-link">sports</a></li>
+          <li><a href="#" class="footer-link">watch</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+  <script src="./script.js"></script>
+</html>

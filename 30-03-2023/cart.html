@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color:lightpink;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: #ff4757;
+}
+
+.nav{
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  color:#ffffff;
+}
+   </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="C:\Users\DELL\Desktop\cart\CSS.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+</head>
+<body>
+  <header>
+    <div class="nav">
+
+      <a href="#" class="logo">
+        <ion-icon name="phone-phone"></ion-icon>
+        HOT GADEGTS 
+      </a>
+
+      <div class="box">
+        <div class="cart-count">0</div>
+        <ion-icon name="cart"  id="cart-icon" ></ion-icon>
+      </div>
+
+      <div class="cart">
+        <div class="cart-title">Cart Items</div>
+        <div class="cart-content">
+
+        </div>
+        
+      <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">Rs.0</div>
+      </div>
+
+      <button class="btn-buy">Place Order</button>
+
+      <ion-icon name="close" id="cart-close"></ion-icon>
+
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <h2 class="title">user's dashboard</h2>
+    <div class="shop-content">
+
+  
+      <div class="phone-box">
+        <div class="pic"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxxYWlNLPjrTjiWEkWeFpJvbX83yP66S5UEQ&usqp=CAU" class="phone-img"></div>
+        <h2 class="phone-title">Xiaomi 12 pro</h2>
+        <span class="phone-price">Rs.15000</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="phone-box">
+        <div class="pic"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC6L4OjViVNn30GfowSENolPx3Qbjxkg4mCPdmXfqMbwF7RaAlfOZjzz5-lczrzZZkqfY&usqp=CAU" class="phone-img"></div>
+        <h2 class="phone-title">Samsung Galaxy</h2>
+        <span class="phone-price">Rs.15000</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+  
+      <div class="phone-box">
+        <div class="pic"><img src="data:image/jpeg;base64,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" class="phone-img"></div>
+        <h2 class="phone-title">iphone</h2>
+        <span class="phone-price">Rs.30000</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+
+
+
+
+    </div>
+  </div>
+  <script>const btnCart=document.querySelector('#cart-icon');
+    const cart=document.querySelector('.cart');
+    const btnClose=document.querySelector('#cart-close');
+    
+    btnCart.addEventListener('click',()=>{
+      cart.classList.add('cart-active');
+    });
+    
+    btnClose.addEventListener('click',()=>{
+      cart.classList.remove('cart-active');
+    });
+    
+    document.addEventListener('DOMContentLoaded',loadFood);
+    
+    function loadFood(){
+      loadContent();
+    
+    }
+    
+    function loadContent(){
+      //Remove phone Items  From Cart
+      let btnRemove=document.querySelectorAll('.cart-remove');
+      btnRemove.forEach((btn)=>{
+        btn.addEventListener('click',removeItem);
+      });
+    
+      //Product Item Change Event
+      let qtyElements=document.querySelectorAll('.cart-quantity');
+      qtyElements.forEach((input)=>{
+        input.addEventListener('change',changeQty);
+      });
+    
+      //Product Cart
+      
+      let cartBtns=document.querySelectorAll('.add-cart');
+      cartBtns.forEach((btn)=>{
+        btn.addEventListener('click',addCart);
+      });
+    
+      updateTotal();
+    }
+    
+    
+    //Remove Item
+    function removeItem(){
+      if(confirm('Are Your Sure to Remove')){
+        let title=this.parentElement.querySelector('.cart-phone-title').innerHTML;
+        itemList=itemList.filter(el=>el.title!=title);
+        this.parentElement.remove();
+        loadContent();
+      }
+    }
+    
+    //Change Quantity
+    function changeQty(){
+      if(isNaN(this.value) || this.value<1){
+        this.value=1;
+      }
+      loadContent();
+    }
+    
+    let itemList=[];
+    
+    //Add Cart
+    function addCart(){
+     let phone=this.parentElement;
+     let title=phone.querySelector('.phone-title').innerHTML;
+     let price=phone.querySelector('.phone-price').innerHTML;
+     let imgSrc=phone.querySelector('.phone-img').src;
+     //console.log(title,price,imgSrc);
+     
+     let newProduct={title,price,imgSrc}
+    
+     //Check Product already Exist in Cart
+     if(itemList.find((el)=>el.title==newProduct.title)){
+      alert("Product Already added in Cart");
+      return;
+     }else{
+      itemList.push(newProduct);
+     }
+    
+    
+    let newProductElement= createCartProduct(title,price,imgSrc);
+    let element=document.createElement('div');
+    element.innerHTML=newProductElement;
+    let cartBasket=document.querySelector('.cart-content');
+    cartBasket.append(element);
+    loadContent();
+    }
+    
+    
+    function createCartProduct(title,price,imgSrc){
+    
+      return `
+      <div class="cart-box">
+      <img src="${imgSrc}" class="cart-img">
+      <div class="detail-box">
+        <div class="cart-phone-title">${title}</div>
+        <div class="price-box">
+          <div class="cart-price">${price}</div>
+           <div class="cart-amt">${price}</div>
+       </div>
+        <input type="number" value="1" class="cart-quantity">
+      </div>
+      <ion-icon name="trash" class="cart-remove"></ion-icon>
+    </div>
+      `;
+    }
+    
+    function updateTotal()
+    {
+      const cartItems=document.querySelectorAll('.cart-box');
+      const totalValue=document.querySelector('.total-price');
+    
+      let total=0;
+    
+      cartItems.forEach(product=>{
+        let priceElement=product.querySelector('.cart-price');
+        let price=parseFloat(priceElement.innerHTML.replace("Rs.",""));
+        let qty=product.querySelector('.cart-quantity').value;
+        total+=(price*qty);
+        product.querySelector('.cart-amt').innerText="Rs."+(price*qty);
+    
+      });
+    
+      totalValue.innerHTML='Rs.'+total;
+    
+    
+      // Add Product Count in Cart Icon
+    
+      const cartCount=document.querySelector('.cart-count');
+      let count=itemList.length;
+      cartCount.innerHTML=count;
+    
+      if(count==0){
+        cartCount.style.display='none';
+      }else{
+        cartCount.style.display='block';
+      }
+    
+    
+    }</script>
+</body>
+</html>
