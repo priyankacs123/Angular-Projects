@@ -1,0 +1,10 @@
+#world{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+}
+div{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLlaFRLuWjtMwUrjvzPGMfLmCHZeWq2hy2UA&usqp=CAU');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
