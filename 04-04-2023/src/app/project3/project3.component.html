@@ -1,0 +1,70 @@
+<body>
+<div class="radio"><p><br><u>Example for If</u></p><form>
+        <input type="radio" value="male" name="option" (click)="onselect('valid')" > Valid<br>
+        <input type="radio" value="female" name="option" (click)="onselect('invalid')"> Invalid 
+ </form>  
+
+<div *ngIf="select">
+    <div *ngIf="select === 'valid'">
+        <p>Valid Data!!!!!!</p>
+    </div>
+    <div *ngIf="select === 'invalid'">
+        <p>Invalid Data!!!!!!</p>
+    </div>
+</div><br>
+<br>
+</div>
+
+<div class="list"><br>
+<p><u>Example for For</u></p>
+<table align="center">
+    
+<tbody>
+<tr>
+    <td *ngFor="let list of list1">{{list}}</td>  
+</tr>
+<tr>
+    <td *ngFor="let list of list2">{{list}}</td>  
+</tr>
+<tr>
+    <td *ngFor="let list of list3">{{list}}</td>  
+</tr>
+<tr>
+    <td *ngFor="let list of list4">{{list}}</td>  
+</tr>
+<tr>
+    <td *ngFor="let list of list5">{{list}}</td>  
+</tr>
+
+</tbody>
+</table>
+<br><br>
+</div>
+
+
+<div class="switch"><br>
+<p><u>Example for Switch</u></p>
+<form>
+    <select (change)="setvalue($event)">
+        <option value="America">America</option>
+        <option value="Australia">Australia</option>
+        <option value="India">India</option>
+        <option value="Italy">Italy</option>
+    </select>
+</form>
+<div [ngSwitch]="str">
+            <div *ngSwitchCase="'Australia'" ><p>you have selected Australia</p>
+        </div>
+            <div *ngSwitchCase="'India'" ><p>you have selected India</p>
+        </div>
+            <div *ngSwitchCase="'America'"><p>you have selected America</p>
+        </div>
+            <div *ngSwitchCase="'Italy'"><p>you have selected Italy</p>
+        </div>
+        <div *ngSwitchDefault?>Default</div>
+   
+</div>
+<br>
+</div>
+<br>
+</body>

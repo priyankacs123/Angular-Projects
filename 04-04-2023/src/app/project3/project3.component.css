@@ -1,0 +1,29 @@
+table,th,td{
+    border: 1px solid black;
+}
+.radio{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGGbxBa9z00FoibU3NM3g_zM_NRJhD0EuYNw&usqp=CAU');
+    background-repeat: no-repeat;
+    background-size: 600px;
+    background-clip:padding-box;
+    background-position: 50%;
+}
+body{
+    text-align: center;
+    text-decoration: dotted;
+}
+.list{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGGbxBa9z00FoibU3NM3g_zM_NRJhD0EuYNw&usqp=CAU');
+    background-repeat: no-repeat;
+    background-size: 600px;
+    background-clip:padding-box;
+    background-position: 50%;
+}
+
+.switch{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGGbxBa9z00FoibU3NM3g_zM_NRJhD0EuYNw&usqp=CAU');
+    background-repeat: no-repeat;
+    background-size: 600px;
+    background-clip:padding-box;
+    background-position: 50%;
+}
