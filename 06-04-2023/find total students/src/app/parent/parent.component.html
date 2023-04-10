@@ -1,0 +1,33 @@
+<hr><h1 align="center">-----Parent Component------</h1>
+<hr>
+
+<h2 align="center">Student List</h2>
+<table align="center">
+  <thead>
+    <tr>
+      <th>Student ID</th>
+      <th>Name</th>
+      <th>Gender</th>
+      <th>Date of Birth</th>
+      <th>Course Fee</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of students">
+      <td>{{ student.id }}</td>
+      <td>{{ student.name }}</td>
+      <td>{{ student.gender }}</td>
+      <td>{{ student.dob }}</td>
+      <td>{{ student.coursefee }}</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<hr>
+
+<app-child [totalStudents]="getTotalStudents()" [totalMales]="getTotalMales()" [totalFemales]="getTotalFemales()"></app-child>
+
+<hr>
+
+
+
