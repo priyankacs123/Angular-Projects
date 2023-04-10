@@ -1,0 +1,60 @@
+<html>
+<head><title>welcome to js</title>
+
+</head>
+<body>
+<script type="text/javascript">
+
+/*var marks="40";
+//var grade;
+switch(marks){
+case "80":
+     document.write("Grade:A");
+	 break;
+case "60":
+     document.write("Grade:B");
+	 break;
+case "40":
+     document.write("Grade:C");
+	 break;
+case "20":
+     document.write("Grade:D");
+	 break;
+default:
+	 document.write("fail");
+}
+var num=0;
+while(num<10)
+{
+document.write("count "+num+ " <br />");
+num++;
+}
+*/
+function multiply()
+{
+        num1 = document.getElementById("number1").value;
+        num2 = document.getElementById("number2").value;
+        document.getElementById("res").innerHTML = num1 * num2;
+}
+function divide() 
+{ 
+        num1 = document.getElementById("number1").value;
+        num2 = document.getElementById("number2").value;
+        document.getElementById("res").innerHTML = num1 / num2;
+}
+</script>
+<form>
+<label for="n1">Enter Number 1:</label>
+<input type="number" id="number1"></input><br><br>
+
+<label for="n2">Enter Number 2:</label>
+<input type="number" id="number2"></input><br><br>
+
+<input type="button" onclick="multiply()" value="multiply" />
+<input type="button" onclick="divide()" value="divide" />
+
+</form>
+
+<p>Result: <br><span id="res"></span></p>
+</body>
+</html>
